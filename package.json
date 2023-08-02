@@ -1,0 +1,16 @@
+{
+  "name": "twyline_technologies",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "John Twyford",
+  "license": "ISC",
+  "homepage": "https://johnrtwyford.github.io/mywebsite",
+
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
