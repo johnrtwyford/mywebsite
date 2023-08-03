@@ -69,30 +69,37 @@
 			</div>
 		</div>
 	</section>
+
 <!-- Consultation -->
 	<section id="get-quote" class="p-5 bg-warning">
 		<div class="container">
 			<h3 class="text-center">Get a free consultaion today</h3>
-			<div class="input-group mb-3">
-				<span class="input-group-text" id="first-name">First Name</span>
-				<input type="text" class="form-control" placeholder="Please enter your first name..." aria-label="fistName" aria-describedby="firstName-1">
-			</div>
-			<div class="input-group mb-3">
-				<span class="input-group-text" id="last-name">Last Name Name</span>
-				<input type="text" class="form-control" placeholder="Please enter your last name..." aria-label="fistName" aria-describedby="firstName-1">
-			</div>
-			<div class="input-group mb-3">
-				<span class="input-group-text" id="contact-number">Contact Number</span>
-				<input type="text" class="form-control" placeholder="Please enter your contact number..." aria-label="fistName" aria-describedby="firstName-1">
-			</div>
-			<div class="input-group mb-3">
-				<span class="input-group-text" id="email">Email</span>
-				<input type="text" class="form-control" placeholder="Please enter your email address" aria-label="fistName" aria-describedby="firstName-1">
-			</div>
-			<div class="input-group">
-				<span class="input-group-text" id = "leave-message">Message</span>
-				<textarea class="form-control" aria-label="With textarea" placeholder="Please tell us what you are looking for today, so that we can be prepared when we get in touch with you..."></textarea>
-			</div>
+			<form action="POST" data-netlify="true">
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="first-name">First Name</span>
+					<input type="text" class="form-control" placeholder="Please enter your first name..." aria-label="fistName" aria-describedby="firstName-1">
+				</div>
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="last-name">Last Name Name</span>
+					<input type="text" class="form-control" placeholder="Please enter your last name..." aria-label="fistName" aria-describedby="firstName-1">
+				</div>
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="contact-number">Contact Number</span>
+					<input type="text" class="form-control" placeholder="Please enter your contact number..." aria-label="fistName" aria-describedby="firstName-1">
+				</div>
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="email">Email</span>
+					<input type="text" class="form-control" placeholder="Please enter your email address" aria-label="fistName" aria-describedby="firstName-1">
+				<div class="field">
+				</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-text" id = "leave-message">Message</span>
+					<textarea class="form-control" aria-label="With textarea" placeholder="Please tell us what you are looking for today, so that we can be prepared when we get in touch with you..."></textarea>
+					<div data-netlify-recaptcha="true"></div>
+				</div>
+				<button  type="submit" class="w-50 mt-2 algin-items-center btn btn-primary">Submit</button>
+			</form>
 		</div>
 	</section>
 
