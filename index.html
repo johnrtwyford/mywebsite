@@ -77,28 +77,28 @@
 			<form action="POST" data-netlify="true">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="first-name">First Name</span>
-					<input type="text" class="form-control" placeholder="Please enter your first name..." aria-label="fistName" aria-describedby="firstName-1">
+					<input type="text" name="firstName" class="form-control" placeholder="Please enter your first name..." aria-label="fistName" aria-describedby="firstName-1">
 				</div>
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="last-name">Last Name Name</span>
-					<input type="text" class="form-control" placeholder="Please enter your last name..." aria-label="fistName" aria-describedby="firstName-1">
+					<input type="text" name="lastName" class="form-control" placeholder="Please enter your last name..." aria-label="fistName" aria-describedby="firstName-1">
 				</div>
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="contact-number">Contact Number</span>
-					<input type="text" class="form-control" placeholder="Please enter your contact number..." aria-label="fistName" aria-describedby="firstName-1">
+					<input type="text" name="contactNumber" class="form-control" placeholder="Please enter your contact number..." aria-label="fistName" aria-describedby="firstName-1">
 				</div>
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="email">Email</span>
-					<input type="text" class="form-control" placeholder="Please enter your email address" aria-label="fistName" aria-describedby="firstName-1">
+					<input type="text" name="email" class="form-control" placeholder="Please enter your email address" aria-label="fistName" aria-describedby="firstName-1">
 				<div class="field">
 				</div>
 				</div>
 				<div class="input-group">
 					<span class="input-group-text" id = "leave-message">Message</span>
-					<textarea class="form-control" aria-label="With textarea" placeholder="Please tell us what you are looking for today, so that we can be prepared when we get in touch with you..."></textarea>
+					<textarea name ="message" class="form-control" aria-label="With textarea" placeholder="Please tell us what you are looking for today, so that we can be prepared when we get in touch with you..."></textarea>
 				</div>
 				<div data-netlify-recaptcha="true" class="mt-2"></div>
-				<button  type="submit" class="w-50 mt-2 algin-items-center btn btn-primary">Submit</button>
+				<input type="submit" value="Send Message" class="actions w-50 mt-2 btn btn-primary">
 			</form>
 		</div>
 	</section>
