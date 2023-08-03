@@ -75,27 +75,22 @@
 		<div class="container">
 			<h3 class="text-center">Get a free consultaion today</h3>
 			<form action="POST" data-netlify="true">
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="first-name">First Name</span>
-					<input type="text" name="firstName" class="form-control" placeholder="Please enter your first name..." aria-label="fistName" aria-describedby="firstName-1">
-				</div>
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="last-name">Last Name Name</span>
-					<input type="text" name="lastName" class="form-control" placeholder="Please enter your last name..." aria-label="fistName" aria-describedby="firstName-1">
-				</div>
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="contact-number">Contact Number</span>
-					<input type="text" name="contactNumber" class="form-control" placeholder="Please enter your contact number..." aria-label="fistName" aria-describedby="firstName-1">
-				</div>
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="email">Email</span>
-					<input type="text" name="email" class="form-control" placeholder="Please enter your email address" aria-label="fistName" aria-describedby="firstName-1">
-				<div class="field">
-				</div>
-				</div>
-				<div class="input-group">
-					<span class="input-group-text" id = "leave-message">Message</span>
-					<textarea name ="message" class="form-control" aria-label="With textarea" placeholder="Please tell us what you are looking for today, so that we can be prepared when we get in touch with you..."></textarea>
+				<div class="fields">
+					<div class="field half">
+						<input type = "text" name="firstname" id="firstname" placeholder="First Name">
+					</div>
+					<div class="field half">
+						<input type = "text" name="lastname" id="lastname" placeholder="Last Name">
+					</div>
+					<div class="field half">
+						<input type = "text" name="mobile" id="mobile"placeholder="Enter your contact number here">
+					</div>
+					<div class="field half">
+						<input type = "text" name="email" id="email" placeholder="Enter your Email address here">
+					</div>
+					<div class="field half">
+						<input type = "textarea" name="message" id="message" placeholder="Enter your message here...">
+					</div>
 				</div>
 				<div data-netlify-recaptcha="true" class="mt-2"></div>
 				<input type="submit" value="Send Message" class="actions w-50 mt-2 btn btn-primary">
