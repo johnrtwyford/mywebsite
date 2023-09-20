@@ -1,413 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="web design, affordable web design, web development, AI, chatGPT">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<!-- Option 1: Include in HTML -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Twyline Technologies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <title>Twyline Technologies | Professional and Affordable Websites and Applications</title>
 </head>
-<body class="bg-light">
-	<!--navbar-->
-	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-		<div class="container">
-			<a href="#" class = "navbar-brand">Twyline Technologies</a>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <img class="logo-pic" src="img/logo.png">
+            <h1 class="logo">Twyline Technologies</h1>
+            <nav>
+                <ul> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="websites.html">Websites</a></li>
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
-			<button
-				class="navbar-toggler" type ="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-			<span class="navbar-toggler-icon"></span>				
-			</button>
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h2>Affordable technical solutions built to your specifications</h2>
+                <h3> Contact us today to see how we can help grow your business with:</h3>
+                <ul class="px-3">
+                    <li>A stylish, eye-catching website</li>
+                    <li>Quality control applications</li>
+                    <li>AI assistance with monotomous tasks, saving you time and helping you focus on other areas of your business</li>
+                </ul>
+                <a href="websites.html" class="btn btn-outline">Find out more</a>
+            </div>
 
-			<div class="collapse navbar-collapse" id="navmenu">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a href="#web-design" class="nav-link text-warning">Web Design</a>
-					</li>
-					<li class="nav-item">
-						<a href="#other-services" class="nav-link text-warning">More Services</a>
-					</li>
-					<li class="nav-item">
-						<a href="#get-quote" class="nav-link text-warning">Contact us</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+            <div class="showcase-form card">
+                <h2>Request a consultation</h2>
+                <form name="contact" action="POST" data-netlify="true">
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name..." required aria-label="Name" aria-describedby="Name">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="company" placeholder="Company Name..." required aria-label="Company Name" aria-describedby="Company Name">
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email..." required aria-label="Email" aria-describedby="Email">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="message" placeholder="Enter your message here..." required aria-label="Message" aria-describedby="Message">
+                    </div>
+                    <div data-netlify-recaptcha="true" class="my-2"></div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
 
-	<!--showcase-->
-	<section id="showcase" class="text-dark p-5 pb-lg-5 text-center text-sm-start">
-		<div class="container">
-			<div class="d-sm-flex algin-items-center justify-content-bewteen">
-				<div>
-					<h1> Bring the World to <span class="text-warning"> your Business </span></h1>
-					<p class="lead my-4">
-						Professional & Affordable Web Design Made Simple
-					</p>
-					<p class="text-warning">
-						<strong>Expert Designers With Years of Experience</strong>
-					</p>
-					<a href="#get-quote"> <button class="btn btn-primary btn-lg"> Get a <span class="text-warning"> FREE </span> consultation today! </button> </a>
-				</div>
-				<img class="img-fluid" src="img/showcase-1.svg">
-			</div>			
-		</div>
-	</section>
+    <!--stats-->
+    <section class="stats">
+        <div class="container">
+            <h2 class="stats-heading text-center my-2">
+                Take your brand to the next level with an intuitive design built specifically with your company's objectives in mind.
+            </h2>
 
-	<!--newsletter-->
-	<section class="bg-primary text-light p-5">
-		<div class="container">	
-			<div class="d-md-flex justify-content-bewteen algin-items-center">
-				<h3 class="mb-3 mb-md-0 px-5">Sign Up For Our Newsletter</h3>
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fa-solid fa-shop fa-3x" style="color: rgb(200, 162, 200);" ></i>
+                    <h3>Increase Sales</h3>
+                    <p class="text-secondary">An online business never closes, and businesses with websites grow between 15-50% more relative to similar enterprises that aren't online</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-google fa-3x" style="color: rgb(200, 162, 200);"></i>
+                    <h3>Build your brand</h3>
+                    <p class="text-secondary">With SEO optimisation, have your name become synonymous with what you do through views at the top of search engines</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot fa-3x" style="color: rgb(200, 162, 200);"></i>
+                    <h3>Make your company more accessible</h3>
+                    <p class="text-secondary">Answer customer questions even when you aren't in the office through FAQ pages, or more advanced tools such as our <a href="#">Twyline AI Chatbot</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<div class="input-group news-input">
-					<input type="text" class="form-control" placeholder="Enter Email..."/>
-					<button class="btn btn-dark btn-lg" type="button">Subscibe</button>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Cli -->
+    <section class="cli">
+        <div class="container grid">
+            <img class="filter-lilac" src="img/showcase-1.svg" alt="">
+            <div class="card">
+                <h3>Fully accessible, user-friendly admin page for you to update your own content</h3>
+            </div>
+            <div class="card">
+                <h3>Deploy immediately - your website up and running within hours of accepting the final design</h3>
+            </div>
+        </div>
+    </section>
 
-<!-- Consultation -->
-	<section id="get-quote" class="p-5 bg-warning">
-		<div class="container">
-			<h3 class="text-center">Get a free consultaion today</h3>
-			<form name="contact" action="POST" data-netlify="true">
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="first-name">First Name</span>
-					<input type="text" name="firstName" class="form-control" placeholder="Please enter your first name..." aria-label="fistName" aria-describedby="firstName-1">
-				</div>
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="last-name">Last Name Name</span>
-					<input type="text" name="lastName" class="form-control" placeholder="Please enter your last name..." aria-label="fistName" aria-describedby="firstName-1">
-				</div>
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="contact-number">Contact Number</span>
-					<input type="text" name="contactNumber" class="form-control" placeholder="Please enter your contact number..." aria-label="fistName" aria-describedby="firstName-1">
-				</div>
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="email">Email</span>
-					<input type="text" name="email" class="form-control" placeholder="Please enter your email address" aria-label="fistName" aria-describedby="firstName-1">
-				<div class="field">
-				</div>
-				</div>
-				<div class="input-group">
-					<span class="input-group-text" id = "leave-message">Message</span>
-					<textarea name ="message" class="form-control" aria-label="With textarea" placeholder="Please tell us what you are looking for today, so that we can be prepared when we get in touch with you..."></textarea>
-				</div>
-				<div data-netlify-recaptcha="true" class="mt-2"></div>
-				<input type="submit" value="Send Message" class="actions w-50 mt-2 btn btn-primary">
-			</form>
-		</div>
-	</section>
+    <!-- Cloud -->
+    <section class="cloud bg-primary my-2 py-2">
+        <div class="container grid">
+            <div class="text-center">
+                <h2 class="lg">Reliable Hosting and Maintenance from £20 per month</h2>
+                <p class ="lead my-1">99.99% uptime guaranteed, so your website is working for you, even when you clock-out</p>
+                <a href="websites.html#hosting" class="btn btn-dark">See Hosting Plans</a>
+            </div>
+            <img src="img/cloud.png" alt="">
+        </div>
+    </section>
 
-	<!-- Boxes-->
-	<section class="p-5">
-		<div class="container">
-			<div class="row text-center g-4">
-				<div class="col-md">
-					<div class="card bg-dark text-light">
-						<div class="card-body text-center">
-							<div class="h1 mb-3">
-								<i class="bi bi-brush"></i>
-							</div>
-							<h3 class="card-title mb-3">
-								Front-End Development				
-							</h3>
-							<p>
-								From blogsites and landing pages to online stores and interactive portfolios, We'll bring your vision of the perfect website to life! 
-							</p>
-							<a href="#" class="btn btn-primary">Find out more</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="card bg-secondary text-light">
-						<div class="card-body text-center">
-							<div class="h1 mb-3">
-								<i class="bi bi-diagram-3"></i>
-							</div>
-							<h3 class="card-title mb-3">
-								Back-end Development				
-							</h3>
-							<p>
-								Server-side solutions for all your companies needs, such as payment processors, user databases and invoice-generators
-							</p>
-							<a href="#" class="btn btn-dark">Find out more</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="card bg-dark text-light border-0">
-						<div class="card-body text-center">
-							<div class="h1 mb-3">
-								<i class="bi bi-phone"></i>
-							</div>
-							<h3 class="card-title mb-3">
-								Responsive Designs		
-							</h3>
-							<p>
-								Over 55% of website traffic is now on mobile devices. Our experienced programmers can develop a website for you that is adaptable to devices of all sizes.
-							</p>
-							<p>  </p>
-							<a href="#" class="btn btn-primary">Find out more</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- languages-->
+    <section class="languages">
+        <h2 class="md text-center my-2">
+            Supported Languages
+        </h2>
+        <div class="container flex">
+            <div class="card" >
+                <h4>Node.js</h4>
+                <img src="img/logos/node.png" alt="">
+            </div>
+            <div class="card" >
+                <h4>Python</h4>
+                <img src="img/logos/python.png" alt="">
+            </div>
+            <div class="card" >
+                <h4>C#</h4>
+                <img src="img/logos/csharp.png" alt="">
+            </div>
+            <div class="card" >
+                <h4>Ruby</h4>
+                <img src="img/logos/ruby.png" alt="">
+            </div>
+            <div class="card" >
+                <h4>PHP</h4>
+                <img src="img/logos/php.png" alt="">
+            </div>
+            <div class="card" >
+                <h4>Scala</h4>
+                <img src="img/logos/scala.png" alt="">
+            </div>
+            <div class="card" >
+                <h4>Clojure</h4>
+                <img src="img/logos/clojure.png" alt="">
+            </div>
+        </div>
+    </section>
 
-	<section id="web-design">
-			<h1 class="text-center">Full-stack Web Design & Development</h1>
-	</section>
-	<section class="p-5">
-		<div class="container">
-			<div class="p-5-m p-2-sm row bg-dark algin-items-center text-center">
-				<div class="col-md">
-					<div class="card bg-dark text-light border-0">
-						<div class="card-body text-center">
-							<h3 class="p-5 card-title mb-3">
-								Landing Pages							
-							</h3>
-							<h3>From £129</h3>	
-							<div class="accordion" id="accordionOne">
-								<div class="accordion-item">
-									<h2 class="accordion-header">
-								  		<button class="bg-primary text-light d-block text-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									Find Out More
-								  		</button>
-									</h2>
-									<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
-										<div class=" bg-dark accordion-body">
-											<p>Focus on one specific product or service and aim to convert visitors into customers</p>
-											<a href="#get-quote" class="btn btn-primary">Get a quote</a>
-								  		</div>
-									</div>
-							  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md">
-				<img class="img-fluid w-100" src="img/landing-page-2.jpg">
-			</div>
-			</div>
-		</div>
-		<div class="p-5-m p-2-sm row bg-light algin-items-center text-center">
-			<div class="col-md">
-				<img class="img-fluid w-100" src="img/e-commerce-1.png">
-			</div>
-			<div class="col-md">
-				<div class="card bg-light text-dark border-0">
-					<div class="card-body text-center">
-						<h3 class="p-5 card-title mb-3">
-							E-Commerce Websites							
-						</h3>
-						<h3>From £1499</h3>	
-						<div class="accordion" id="accordionTwo">
-							<div class="accordion-item">
-								<h2 class="accordion-header">
-							  		<button class="bg-primary text-light d-block text-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-								Find out more
-							  		</button>
-								</h2>
-								<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionTwo">
-									<div class=" bg-light accordion-body">
-										<p>Enable your business to sell products or services directly to customers. Our integrated payment processor technology and invoice generators will help to make your transactions as smooth as possible</p>
-										<a href="#get-quote" class="btn btn-primary">Get a quote</a>
-							  		</div>
-								</div>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="p-5-m p-2-sm row bg-dark algin-items-center text-center">
-			<div class="col-md">
-				<div class="card bg-dark text-light border-0">
-					<div class="card-body text-center">
-						<h3 class="p-5 card-title mb-3">
-							Portfolios							
-						</h3>
-						<h3>From £129</h3>	
-						<div class="accordion" id="accordionThree">
-							<div class="accordion-item">
-								<h2 class="accordion-header">
-							  		<button class="bg-primary text-light d-block text-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-								Find out more
-							  		</button>
-								</h2>
-								<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
-									<div class=" bg-dark text-light accordion-body">
-										<p>Showcase your previous work and highlight your skills and expertise, perfect for freelancers looking to drum up business</p>
-										<a href="#get-quote" class="btn btn-primary">Get a quote</a>
-							  		</div>
-								</div>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md">
-				<img class="img-fluid w-100 border-2" src="img/portfolio-1.png">
-			</div>
-		</div>
-		<div class="p-5-m p-2-sm row bg-light algin-items-center text-center">
-			<div class="col-md">
-				<img class="img-fluid w-100" src="img/blogsite-1.png">
-			</div>
-			<div class="col-md">
-				<div class="card bg-light text-dark border-0">
-					<div class="card-body text-center">
-						<h3 class="p-5 card-title mb-3">
-							Blogsites						
-						</h3>
-						<h3>From £399</h3>	
-						<div class="accordion" id="accordionFour">
-							<div class="accordion-item">
-								<h2 class="accordion-header">
-							  		<button class="bg-primary text-light d-block text-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-								Find out more
-							  		</button>
-								</h2>
-								<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFour">
-									<div class=" bg-light accordion-body">
-										<p>Perfect for sharing engaging and informative content with your audience</p>
-										<a href="#get-quote" class="btn btn-primary">Get a quote</a>
-							  		</div>
-								</div>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="p-5-m p-2-sm row bg-dark algin-items-center text-center">
-			<div class="col-md">
-				<div class="card bg-dark text-light border-0">
-					<div class="card-body text-center">
-						<h3 class="p-5 card-title mb-3">
-							Directory and Listings Websites
-						</h3>
-						<h3>From £199</h3>	
-						<div class="accordion" id="accordionFive">
-							<div class="accordion-item">
-								<h2 class="accordion-header">
-							  		<button class="bg-primary text-light d-block text-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-								Find out more
-							  		</button>
-								</h2>
-								<div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFive">
-									<div class=" bg-dark text-light accordion-body">
-										<p>These websites provide a platform for businesses to list their services or products</p>
-										<a href="#get-quote" class="btn btn-primary">Get a quote</a>
-							  		</div>
-								</div>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md">
-				<img class="img-fluid w-100" src="img/directory-website-1.png">
-			</div>
-		</div>
-
-
-		<div class="p-5-m p-2-sm row bg-light algin-items-center text-center">
-			<div class="col-md">
-				<img class="img-fluid w-100" src="img/social-media-2.svg">
-			</div>
-			<div class="col-md">
-				<div class="card bg-light text-dark border-0">
-					<div class="card-body text-center">
-						<h3 class="p-5 card-title mb-3">
-							Social Networking Sites						
-						</h3>
-						<h3>From £5000</h3>	
-						<div class="accordion" id="accordionSix">
-							<div class="accordion-item">
-								<h2 class="accordion-header">
-							  		<button class="bg-primary text-light d-block text-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-								Find out more
-							  		</button>
-								</h2>
-								<div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionSix">
-									<div class=" bg-light accordion-body">
-										<p>Social networking sites allow users to connect and engage with each other. These can be perfect for larger companies to create a space where employees can communicate within the comfort of their own workspace</p>
-										<a href="#get-quote" class="btn btn-primary">Get a quote</a>
-							  		</div>
-								</div>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="p-5-m p-2-sm row bg-dark algin-items-center text-center">
-			<div class="col-md">
-				<div class="card bg-dark text-light border-0">
-					<div class="card-body text-center">
-						<h3 class="p-5 card-title mb-3">
-							Educational Websites
-						</h3>
-						<h3>From £799</h3>	
-						<div class="accordion" id="accordionSeven">
-							<div class="accordion-item">
-								<h2 class="accordion-header">
-							  		<button class="bg-primary text-light d-block text-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-								Find out more
-							  		</button>
-								</h2>
-								<div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionSeven">
-									<div class=" bg-dark text-light accordion-body">
-										<p>Educational Websites offer valuable resources and information to help users learn about a specific top, or build out to a more general site where topics of all academic categories are covered</p>
-										<a href="#get-quote" class="btn btn-primary">Get a quote</a>
-							  		</div>
-								</div>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md">
-				<img class="img-fluid w-100" src="img/education-1.jpg">
-			</div>
-		</div>
-	</section>
-
-	<section id="other-services" class="p-5 bg-secondary">
-		<div class="container">
-			<div class="row text-center g-4">
-				<h2>Other Services</h2>
-				<div class="col-md p-5 border border-1 border-warning bg-light">
-					<h3 class="card-title mb-3">
-						Website Maintenance							
-					</h3>
-					<h4>From £49 per month</h4>
-					<p>Once your website is built, we will be here to ensure it is always running smoothly, update it whenever necassary and be available to you 7 days per week to provide world-class customer service</p>
-					<a href="#get-quote" class="btn btn-primary">Find out more</a>
-				</div>
-				<div class="col-md p-5 border border-1 border-warning bg-light">
-					<h3 class="card-title mb-3">
-						Websiste Hosting							
-					</h3>
-					<h4>Price: £20 per month</h4>
-					<p>Already have your website built? We can host your website securely with a guaranteed up-time of 99.9%!</p>
-					<a href="#get-quote" class="btn btn-primary">Find out more</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer>
-		<p class="p-5 text-center">Twyline Technologies Ltd, Copyright &copy; 2023</p>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Footer-->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Twyline Technologies Ltd</h1>
+                <p>Copyright &copy; 2023</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="websites.html">Websites</a></li>
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
