@@ -57,7 +57,7 @@ blockquote {
 .navbar {
     background-color: white;
     color: var(--primary-color);
-    height: 70px
+    height: 140px;
 }
 
 .logo-pic {
